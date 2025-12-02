@@ -1,0 +1,88 @@
+- 1.1.2a
+ - Fixed:
+   - Sketch crashed game when erased
+ - Changed:
+   - Rubi Sanag now only attempts to clear enhancements off discarded cards if it is enhanced (prevents sound spam)
+
+- 1.1.2
+ - Added:
+   - ToadOCooly now references Deja Vu Spectral and Red Seals
+   - Cursed Soul now references Cursed Enhancement
+   - Prismatic Jelly now references Wild Enhancement and Polychrome Edition
+ - Fixed:
+   - Removed a hidden joker from modded buffoon packs
+   - Fixed crash revolving around unlocking a hidden joker
+   - Tweaked behavior for other jokers after unlocking a hidden joker within a run
+   - Disabled a hidden joker and all legendary jokers added from appearing within vanilla buffoon packs
+   - A lot of visual variables were broken by sounds being added and have been fixed
+   - Redborg was not functioning whatsoever and was just generally poorly coded, redone from the ground up to work now
+ - Notes:
+   - I plan to add more references to consumables in the future (CJ spectral, Relic spectral, etc), but at the moment Joker Forge does not support it
+
+- 1.1.1:
+ - Added:
+   - Sounds for the following cards: Mart, Old Man, Redborg, Sketch, Rubi Sanag, Odysseus, Temptation, and Spectre
+   - Sell sound for Alex Chief
+ - Fixed:
+   - ToadOCooly's skip pack effect no longer crashes
+ - Changes:
+   - Changed Witch Doctor's description to be a bit more accurate to effect
+   - YellowFrog's sound playing on hand played rather than when bought
+   - Sishi and Kutaro's sound playing on round start rather than when bought
+   - Adjusted Mart's inner code to not be accidental
+   - Adjusted inner code of Bad Collision, possibly stopping crash (unsure, saw it was broken and fixed it)
+ - Notes:
+   - I am aware Redborg's description is showing 0 instead of the suit, I have no idea why this is happening
+
+- 1.1.0:
+ - Added:
+   - Sounds for the following cards: Tokagashi, The Creature, SwagMessiah, Sishi and Kutaro, Prismatic Jelly, Nuclear Warhead, MesyGoose, Lex, Hex, Goober Joker, 'Cursed!', Cursed Soul, Curse of 3s, CJamIam, Backyard Burn, Alex Chad, 20 Sided Die, Yellow Frog, Cursed Enhancement, Relic, 
+ - Fixed:
+   - Hopefully finally fixed 20 Sided Die for the last time
+
+- 1.0.6:
+ - Fixes:
+   - Reverted accidental change to Cursed Cards that caused crash instead of giving "Cursed!" joker
+
+- 1.0.5:
+ - Fixes:
+   - Reverted under-the-hood changes to Cursed Soul, fixing it not giving a legendary joker
+- 1.0.4:
+ - Fixes:
+   - Fixed Yellow Frog's effect to only retrigger first and last card
+   - Cursed cards are now discovered by default
+   - Fixed inaccurate listing of Mart working with blueprint
+ - Changes:
+   - Updated Yellow Frog's description to be a bit less confusing
+   - Buffed Growth spectral card to not have a selection limit
+   - General under-the-hood changes to Alex Chad, Solar System, and Cursed Soul
+
+- 1.0.3:
+ - Fixes:
+   - Fixed Yellow Frog to properly repeat singular scoring cards twice
+   - Fixed Witch Doctor from reducing score if you have no cursed cards, and made it update it's cursed card count more often (when bought and when a card is bought)
+   - Fixed rarity of Mart in Lex Mod Buffoon packs to accurately reflect rarity change in 1.0.2
+   - Fixed description of Cursed Soul to be accurate to the changes made in 1.0.1 (joker now ignores Joker Slots)
+   - Updated description of Relic spectral card to better reflect how cards are added
+   - Tweaked mod description
+ - Changes:
+   - Changed grey seals to remove the seal when effect is triggered
+   - Reverted ability and rarity of "Curse of 3s" to it's beta functionality (non-three of a kind cards are destroyed, rare instead of uncommon)
+   - Temporarily changed "Cursed!" to set hand size to 0 instead of instantly causing Game Over (for the sake of Multiplayer Mod compatibility until a better solution is found. This functionality is not mimicked by Nuclear Warhead, as Nuclear Warhead is banned in Multiplayer)
+   - Buffed Penny Saved to add $4 per shop rather than $2
+   - Lowered price of Cobalt from $7 to $5
+   - Raised price of Goober Joker from $6 to $8
+   - Lowered chances of Cursed playing cards appearing when an enhancement is randomly selected (Booster Packs, Rubi Sanag, etc.)
+   - Changed mod folder from "lexmod" to "lexmod[Version Number]" (this version being "lexmod-1.0.3")
+   - Added "attrition" and "survival" lua files to the mod folder, can be used to apply compatibility with Multiplayer Mod
+
+- 1.0.2:
+   - Changed Mart to have an accurate description of effect (effect was initially bugged, but I like how it turned out). Also changed Mart to be Uncommon
+   - Changed Grey seal to have a 1 in 4 chance to create a negative joker when DISCARDED, and upon this effect happening, Curses the card (Seal stays)
+   - Changed "Cursed!" to break itself after game overing the player
+   - Changed Relic Spectral to give $10, $20, or $30, and to give 2 to 5 Cursed Cards
+
+
+- 1.0.1:
+   - Twenty Sided Die had it's description variables fixed
+   - Cursed Soul now ignores Joker Slots when sold (this can potentially lead to Joker overload if it is sold Negative, however this lines up with vanilla mechanics that are similar such as Invisible Joker so that is fine)
